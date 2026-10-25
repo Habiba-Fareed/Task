@@ -1,0 +1,322 @@
+/* General Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f4f7fc;
+color: #173455;
+}
+
+.navbar {
+min-height: 86px;
+padding: 20px 8%;
+background-color: #10233f;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+color: white;
+font-size: 26px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.logo span,
+.hero h1 span,
+footer span {
+color: #a77aff;
+}
+
+.navbar nav {
+display: flex;
+gap: 30px;
+}
+
+.navbar nav a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+transition: 0.3s;
+}
+
+.navbar nav a:hover{
+color: #a77aff;
+}
+
+
+.hero {
+min-height: 460px;
+padding: 70px 8%;
+
+
+display: flex;
+align-items: center;
+
+color: white;
+
+background-image:
+    linear-gradient(
+        rgba(8, 20, 38, 0.65),
+        rgba(8, 20, 38, 0.65)
+    ),
+    url("https://media.posterstore.com/site_images/6862b9fa92c536b9cc92944a_1716317087_PS51297-4.jpg");
+
+background-size: cover;
+background-position: center;
+
+
+}
+
+.hero-content {
+max-width: 650px;
+}
+
+.hero h1 {
+font-size: 54px;
+line-height: 1.16;
+margin-bottom: 25px;
+}
+
+.hero p {
+font-size: 17px;
+line-height: 1.8;
+margin-bottom: 30px;
+}
+
+.btn {
+display: inline-block;
+padding: 17px 32px;
+
+
+background-color: #8b50f6;
+color: white;
+
+text-decoration: none;
+border-radius: 30px;
+font-size: 16px;
+
+transition: 0.3s;
+
+
+}
+
+.btn:hover {
+background-color: #763de6;
+transform: translateY(-2px);
+}
+
+.courses {
+padding: 68px 0 60px;
+background-color: #f4f7fc;
+}
+
+.container {
+width: 84%;
+max-width: 1390px;
+margin: auto;
+}
+
+.courses h2 {
+font-size: 36px;
+margin-bottom: 18px;
+}
+
+.description {
+color: #5d7899;
+font-size: 17px;
+line-height: 1.6;
+margin-bottom: 28px;
+}
+
+.course-c {
+display: flex;
+gap: 27px;
+}
+
+
+.course-card {
+position: relative;
+flex: 1;
+min-height: 210px;
+padding: 32px 28px 27px;
+border-radius: 18px;
+}
+.course-card {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+cursor: pointer;
+}
+
+.course-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 18px 35px rgba(18, 35, 63, 0.20);
+}
+
+
+.web {
+background-color: #eee6ff;
+}
+
+.uiux {
+background-color: #dff2ff;
+}
+
+.data {
+background-color: #ddf8ed;
+}
+
+.course-card h3 {
+font-size: 24px;
+margin-bottom: 18px;
+line-height: 1.25;
+}
+
+.course-card p {
+font-size: 16px;
+line-height: 1.65;
+margin-bottom: 26px;
+color: #294968;
+}
+
+.course-card a {
+color: #7c35f5;
+text-decoration: none;
+font-size: 17px;
+font-weight: bold;
+}
+
+.course-card a:hover {
+text-decoration: underline;
+}
+
+/* NEW Badge */
+.badge {
+position: absolute;
+top: 17px;
+right: 17px;
+
+
+padding: 7px 15px;
+
+background-color: #8b50f6;
+color: white;
+
+border-radius: 30px;
+font-size: 12px;
+font-weight: bold;
+
+
+}
+
+/* Footer */
+footer {
+min-height: 135px;
+padding: 34px 20px;
+
+
+background-color: #10233f;
+color: white;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+text-align: center;
+
+
+}
+
+footer h2 {
+font-size: 24px;
+margin-bottom: 14px;
+}
+
+footer p {
+font-size: 15px;
+line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+.course-container {
+flex-wrap: wrap;
+}
+
+
+.course-card {
+    flex: 1 1 45%;
+}
+
+.container {
+    width: 88%;
+}
+
+
+}
+
+@media (max-width: 600px) {
+.navbar {
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+}
+
+.navbar nav {
+    gap: 24px;
+}
+
+.hero {
+    min-height: 430px;
+    padding: 55px 6%;
+}
+
+.hero h1 {
+    font-size: 39px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.courses {
+    padding: 45px 0;
+}
+
+.container {
+    width: 88%;
+}
+
+.courses h2 {
+    font-size: 29px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+.course-container {
+    flex-direction: column;
+    gap: 18px;
+}
+
+.course-card {
+    width: 100%;
+    min-height: 190px;
+    padding: 27px 23px;
+}
+
+.course-card h3 {
+    font-size: 22px;
+}
+
+}
