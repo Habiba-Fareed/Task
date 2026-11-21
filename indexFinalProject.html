@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore The World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Explore<span>.</span></a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#about">About Us</a>
+      </nav>
+      <a href="#destinations" class="btn btn-dark">Explore Now</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container">
+      <p class="eyebrow">Discover the world</p>
+      <h1>Explore The <br><span>Beautiful World</span></h1>
+      <p class="hero-text">
+        Discover amazing places, explore different cultures and experience unforgettable journeys.
+      </p>
+      <a href="#destinations" class="btn btn-orange">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="destinations" id="destinations">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Your next adventure</p>
+        <h2>Popular Destinations</h2>
+        <p class="section-sub">Explore some of the most beautiful cities in the world.</p>
+      </div>
+
+      <!-- Card (filled by script.js) -->
+      <article class="dest-card" id="destCard">
+        <div class="dest-info">
+          <span class="dest-count" id="destCount"></span>
+          <span class="dest-country" id="destCountry"></span>
+          <h3 id="destName"></h3>
+          <p class="dest-desc" id="destDesc"></p>
+
+          <div class="dest-facts">
+            <div><h4>Continent</h4><p id="destContinent"></p></div>
+            <div><h4>Famous Food</h4><p id="destFood"></p></div>
+            <div><h4>Famous Place</h4><p id="destPlace"></p></div>
+            <div><h4>Language</h4><p id="destLanguage"></p></div>
+          </div>
+
+          <a href="#" class="btn btn-dark" id="destMore">Explore More</a>
+        </div>
+
+        <div class="dest-image" id="destImage">
+          <div class="dest-badge">
+            <span>Destination</span>
+            <strong id="destBadge"></strong>
+          </div>
+        </div>
+      </article>
+
+      <!-- Controls -->
+      <div class="controls">
+        <button class="btn btn-dark" id="prevBtn">&larr; Previous</button>
+        <div class="dots" id="dots"></div>
+        <button class="btn btn-dark" id="nextBtn">Next &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="about">
+    <div class="footer-main">
+      <h2>Travel. Discover. Enjoy.</h2>
+      <p>Every destination has a story. Let's discover it together.</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Explore The World. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
